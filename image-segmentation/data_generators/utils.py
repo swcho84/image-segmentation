@@ -25,6 +25,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# for using anaconda3`s opencv
+import sys
+print(sys.path)
+ros_path = '/opt/ros/kinetic/lib/python2.7/dist-packages'
+
+if ros_path in sys.path:
+		sys.path.remove(ros_path)
+
 import warnings
 import numpy as np
 import scipy
@@ -38,7 +46,7 @@ from distutils.version import LooseVersion
 from classification_models import Classifiers
 
 def load_image_rgb(fname):
-    return cv2.cvtColor(cv2.imread(fname), cv2.COLOR_BGR2RGB)
+		return cv2.cvtColor(cv2.imread(fname), cv2.COLOR_BGR2RGB)
 
 def resize(image, output_shape, order=1, mode='constant', cval=0, clip=True,
            preserve_range=False, anti_aliasing=False, anti_aliasing_sigma=None):

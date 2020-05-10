@@ -7,4 +7,5 @@ playground.py
 examples/coco_converter
 plans/*/
 assets/*/
+fpn_resnet18_kitti/*/
 assets/*.tar.gz
