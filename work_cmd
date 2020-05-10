@@ -1,0 +1,5 @@
+Work
+python3 infer_gui.py -c=fpn_resnet18_kitti/fpn_resnet18_kitti.cfg -i=datasets/KITTI/test/images -w=fpn_resnet18_kitti/fpn_resnet18_kitti.h5 -l=fpn_resnet18_kitti/class_names.json
+
+Doesn`t work because of cudnn version
+python3 infer_gui.py -c=examples/custom_backbone/MaskRCNN_coco.cfg -i=datasets/coco/val2017 -w=examples/custom_backbone/MaskRCNN_coco.h5 -l=examples/custom_backbone/coco_class_names.json
