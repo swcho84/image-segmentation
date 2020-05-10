@@ -8,4 +8,5 @@ examples/coco_converter
 plans/*/
 assets/*/
 fpn_resnet18_kitti/*/
+maskrcnn_coco/*/
 assets/*.tar.gz
