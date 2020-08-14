@@ -34,7 +34,8 @@ if __name__ == '__main__':
 
     assert args.threshold >= 0.0 and args.threshold < 1.0, \
         'Invalid threshold value {} given'.format(args.threshold)
-
+    
+    print(args.label)	
     if args.label is not None:
         assert os.path.exists(args.label)
         fp = open(args.label, 'r')

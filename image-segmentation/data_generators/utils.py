@@ -46,7 +46,7 @@ from distutils.version import LooseVersion
 from classification_models import Classifiers
 
 def load_image_rgb(fname):
-		return cv2.cvtColor(cv2.imread(fname), cv2.COLOR_BGR2RGB)
+    return cv2.cvtColor(cv2.imread(fname, 1), cv2.COLOR_BGR2RGB)
 
 def resize(image, output_shape, order=1, mode='constant', cval=0, clip=True,
            preserve_range=False, anti_aliasing=False, anti_aliasing_sigma=None):
